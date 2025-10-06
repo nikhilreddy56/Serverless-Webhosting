@@ -29,3 +29,19 @@ API Gateway triggers the Lambda function (written in Python).
 Lambda performs business logic and interacts with DynamoDB to fetch or store data.
 
 Responses are sent back through API Gateway → CloudFront → Browser.
+
+🛠️ Technologies Used
+
+Python 3.x
+
+AWS Lambda
+
+Amazon API Gateway
+
+Amazon DynamoDB
+
+Amazon S3
+
+Amazon CloudFront
+
+AWS CLI
