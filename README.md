@@ -45,3 +45,18 @@ Amazon S3
 Amazon CloudFront
 
 AWS CLI
+
+
+🧠 Example Use Case
+
+This architecture can support applications such as:
+
+Feedback collection app
+
+To-do list or notes app
+
+Lightweight REST APIs
+
+Contact form submissions
+
+Serverless dashboards
