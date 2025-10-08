@@ -28,3 +28,7 @@ DynamoDB table stores student records in a NoSQL format.
 
 
 The two Lambda functions — get_function.py and post_function.py — are integrated with API Gateway as the GET and POST methods of the /students endpoint. The GET method (get_function.py) retrieves all student records from the DynamoDB table and returns them to the frontend, while the POST method (post_function.py) accepts JSON input from the client, adds a new student entry to the DynamoDB table, and returns a success response. Both methods are configured with CORS enabled, allowing the frontend hosted on S3/CloudFront to securely interact with the API.
+
+
+
+The API Gateway Invoke URL is integrated into the script.js file, allowing the frontend to communicate securely with the backend Lambda functions through the defined API endpoints. Both index.html and script.js are uploaded to an Amazon S3 bucket configured for static website hosting, with public access disabled for enhanced security. Instead of exposing the S3 URL directly, the site is served via Amazon CloudFront, which provides HTTPS encryption, global content distribution, and faster access through edge locations. This ensures that all user interactions with the web application occur securely and efficiently
