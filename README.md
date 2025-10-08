@@ -6,7 +6,7 @@ This project demonstrates a fully serverless web application hosted on AWS. It u
 
 Frontend
 
-Amazon S3 hosts a static website (HTML, CSS, JS).
+Amazon S3 hosts a static website (HTML, and JS).
 
 Amazon CloudFront delivers the website globally with low latency and HTTPS.
 
