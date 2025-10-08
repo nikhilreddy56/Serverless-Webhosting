@@ -1,62 +1,19 @@
-# Serverless-Webhosting
-🧩 Overview
+🧠 Serverless Web Hosting using AWS Lambda, API Gateway, S3, CloudFront & DynamoDB
 
-This project demonstrates how to host and deploy a Python-based application on a fully serverless AWS architecture using the following services:
+This project demonstrates a fully serverless web application hosted on AWS. It uses Amazon S3 and CloudFront for static web hosting, API Gateway and Lambda for backend logic, and DynamoDB as the database layer — eliminating the need for traditional servers.
 
-Amazon S3 – for static file hosting (frontend, assets)
+🏗️ Architecture Overview
 
-AWS Lambda – for backend logic and API endpoints
+Frontend
 
-Amazon API Gateway – to expose Lambda functions as REST APIs
+Amazon S3 hosts a static website (HTML, CSS, JS).
 
-Amazon DynamoDB – for scalable, serverless database storage
+Amazon CloudFront delivers the website globally with low latency and HTTPS.
 
-Amazon CloudFront – as a global CDN for caching and secure content delivery
+Backend
 
-The architecture eliminates the need for managing traditional servers, ensuring high scalability, low operational overhead, and cost efficiency.
+Amazon API Gateway acts as the REST API endpoint, exposing backend routes to the frontend.
 
+AWS Lambda hosts serverless compute functions triggered via API Gateway.
 
-🪄 How It Works
-
-Frontend is uploaded to an S3 bucket configured for static website hosting.
-
-CloudFront sits in front of S3, serving static assets with caching and HTTPS.
-
-User actions (like form submissions or button clicks) call the API Gateway endpoint.
-
-API Gateway triggers the Lambda function (written in Python).
-
-Lambda performs business logic and interacts with DynamoDB to fetch or store data.
-
-Responses are sent back through API Gateway → CloudFront → Browser.
-
-🛠️ Technologies Used
-
-Python 3.x
-
-AWS Lambda
-
-Amazon API Gateway
-
-Amazon DynamoDB
-
-Amazon S3
-
-Amazon CloudFront
-
-AWS CLI
-
-
-🧠 Example Use Case
-
-This architecture can support applications such as:
-
-Feedback collection app
-
-To-do list or notes app
-
-Lightweight REST APIs
-
-Contact form submissions
-
-Serverless dashboards
+Amazon DynamoDB stores and retrieves data with low-latency access.
