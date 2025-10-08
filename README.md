@@ -1,19 +1,27 @@
 🧠 Serverless Web Hosting using AWS Lambda, API Gateway, S3, CloudFront & DynamoDB
 
-This project demonstrates a fully serverless web application hosted on AWS. It uses Amazon S3 and CloudFront for static web hosting, API Gateway and Lambda for backend logic, and DynamoDB as the database layer — eliminating the need for traditional servers.
+This project demonstrates a fully serverless web application hosted on AWS using:
+
+Amazon S3 + CloudFront for hosting the frontend,
+
+API Gateway + Lambda (post_function.py & get_function.py) for backend logic, and
+
+DynamoDB for storing and retrieving student data.
 
 🏗️ Architecture Overview
 
 Frontend
 
-Amazon S3 hosts a static website (HTML, and JS).
+Hosted on Amazon S3, distributed globally via CloudFront.
 
-Amazon CloudFront delivers the website globally with low latency and HTTPS.
+Communicates with API Gateway endpoints for data operations.
 
 Backend
 
-Amazon API Gateway acts as the REST API endpoint, exposing backend routes to the frontend.
+API Gateway exposes REST API endpoints /students for GET and POST.
 
-AWS Lambda hosts serverless compute functions triggered via API Gateway.
+get_function.py Lambda handles fetching data from DynamoDB.
 
-Amazon DynamoDB stores and retrieves data with low-latency access.
+post_function.py Lambda handles inserting data into DynamoDB.
+
+DynamoDB table stores student records in a NoSQL format.
