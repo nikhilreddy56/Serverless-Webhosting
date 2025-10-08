@@ -36,3 +36,7 @@ The two Lambda functions — get_function.py and post_function.py — are integr
 
 
 The API Gateway Invoke URL is integrated into the script.js file, allowing the frontend to communicate securely with the backend Lambda functions through the defined API endpoints. Both index.html and script.js are uploaded to an Amazon S3 bucket configured for static website hosting, with public access disabled for enhanced security. Instead of exposing the S3 URL directly, the site is served via Amazon CloudFront, which provides HTTPS encryption, global content distribution, and faster access through edge locations. This ensures that all user interactions with the web application occur securely and efficiently
+
+<img width="1211" height="490" alt="image" src="https://github.com/user-attachments/assets/7e91a329-3e59-47a1-b3ce-45ba78263c52" />
+
+<img width="1213" height="327" alt="image" src="https://github.com/user-attachments/assets/9ccf15bc-88ad-4de7-bda3-850245857b56" />
