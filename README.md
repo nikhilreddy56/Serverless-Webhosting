@@ -39,7 +39,13 @@ The API Gateway Invoke URL is integrated into the script.js file, allowing the f
 
 <img width="1211" height="490" alt="image" src="https://github.com/user-attachments/assets/7e91a329-3e59-47a1-b3ce-45ba78263c52" />
 
+
+
 <img width="1213" height="327" alt="image" src="https://github.com/user-attachments/assets/9ccf15bc-88ad-4de7-bda3-850245857b56" />
 
 
+
+
 web hosting files(index.html and script.js) are added to S3 bucket- <img width="1326" height="494" alt="image" src="https://github.com/user-attachments/assets/f0146dbd-8bda-436e-9ba6-87b5fe9ad68e" />
+
+
